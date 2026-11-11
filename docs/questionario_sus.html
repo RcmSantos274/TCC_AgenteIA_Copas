@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionário SUS — Agente de IA para Análise Tática</title>
+<style>
+  :root {
+    --bg: #f8f9fa; --card: #ffffff; --text: #212529; --accent: #0d6efd;
+    --border: #dee2e6; --muted: #6c757d; --selected: #0d6efd; --selected-text: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1a1a2e; --card: #16213e; --text: #e0e0e0; --accent: #4da6ff;
+      --border: #2a2a4a; --muted: #9e9e9e; --selected: #4da6ff; --selected-text: #1a1a2e;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1a1a2e; --card: #16213e; --text: #e0e0e0; --accent: #4da6ff;
+    --border: #2a2a4a; --muted: #9e9e9e; --selected: #4da6ff; --selected-text: #1a1a2e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 16px; }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .subtitle { color: var(--muted); margin-bottom: 1.5rem; font-size: 0.9rem; }
+  .intro { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; }
+  .intro p { margin-bottom: 0.5rem; }
+  .intro p:last-child { margin-bottom: 0; }
+  .question { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin-bottom: 0.75rem; }
+  .question .num { font-weight: 600; color: var(--accent); }
+  .question p { margin-bottom: 0.75rem; }
+  .scale { display: flex; gap: 0; justify-content: space-between; }
+  .scale label { flex: 1; text-align: center; cursor: pointer; padding: 0.5rem 0.25rem; border: 1px solid var(--border); font-size: 0.85rem; transition: all 0.15s; }
+  .scale label:first-child { border-radius: 6px 0 0 6px; }
+  .scale label:last-child { border-radius: 0 6px 6px 0; }
+  .scale input { display: none; }
+  .scale input:checked + span { background: var(--selected); color: var(--selected-text); }
+  .scale label span { display: block; padding: 0.25rem; border-radius: 3px; }
+  .extremes { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--muted); margin-top: 0.25rem; }
+  .field { margin-bottom: 1rem; }
+  .field label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+  .field input, .field textarea { width: 100%; padding: 0.5rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; background: var(--card); color: var(--text); }
+  .field textarea { min-height: 80px; resize: vertical; }
+  #result { display: none; background: var(--card); border: 2px solid var(--accent); border-radius: 8px; padding: 1.5rem; margin-top: 1.5rem; text-align: center; }
+  #result .score { font-size: 2.5rem; font-weight: 700; color: var(--accent); }
+  #result .label { font-size: 1rem; color: var(--muted); }
+  button { background: var(--accent); color: #fff; border: none; padding: 0.75rem 2rem; border-radius: 8px; font-size: 1rem; cursor: pointer; margin-top: 1rem; width: 100%; }
+  button:hover { opacity: 0.9; }
+  .error { color: #dc3545; font-size: 0.85rem; margin-top: 0.5rem; display: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Questionário SUS</h1>
+  <p class="subtitle">System Usability Scale — Agente de IA para Análise Tática de Copas do Mundo</p>
+
+  <div class="intro">
+    <p><strong>Instruções:</strong> Após utilizar o sistema (dashboard Streamlit + chat com agente de IA),
+    responda cada afirmação abaixo selecionando o número que melhor representa sua opinião.</p>
+    <p>A escala vai de <strong>1</strong> (Discordo totalmente) a <strong>5</strong> (Concordo totalmente).
+    Não existem respostas certas ou erradas.</p>
+  </div>
+
+  <form id="susForm">
+    <div class="field">
+      <label for="nome">Nome do avaliador (opcional)</label>
+      <input type="text" id="nome" placeholder="Seu nome">
+    </div>
+    <div class="field">
+      <label for="perfil">Perfil (ex: estudante de CC, analista de dados, torcedor)</label>
+      <input type="text" id="perfil" placeholder="Seu perfil">
+    </div>
+
+    <div id="questions"></div>
+
+    <div class="field" style="margin-top: 1rem;">
+      <label for="comentarios">Comentários adicionais (opcional)</label>
+      <textarea id="comentarios" placeholder="Sugestões, dificuldades encontradas, funcionalidades que mais gostou..."></textarea>
+    </div>
+
+    <p class="error" id="formError">Por favor, responda todas as 10 questões antes de enviar.</p>
+    <button type="submit">Calcular pontuação SUS</button>
+  </form>
+
+  <div id="result">
+    <div class="score" id="scoreValue"></div>
+    <div class="label" id="scoreLabel"></div>
+    <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--muted);" id="scoreDetail"></p>
+  </div>
+</div>
+
+<script>
+const perguntas = [
+  "Eu gostaria de usar este sistema com frequência.",
+  "Achei o sistema desnecessariamente complexo.",
+  "Achei o sistema fácil de usar.",
+  "Acho que precisaria de apoio técnico para conseguir usar o sistema.",
+  "Achei que as diversas funções do sistema estão bem integradas.",
+  "Achei que havia muita inconsistência no sistema.",
+  "Imagino que a maioria das pessoas aprenderia a usar o sistema rapidamente.",
+  "Achei o sistema muito complicado de usar.",
+  "Me senti confiante ao usar o sistema.",
+  "Precisei aprender muitas coisas antes de conseguir usar o sistema."
+];
+
+const container = document.getElementById('questions');
+perguntas.forEach((q, i) => {
+  const num = i + 1;
+  let html = `<div class="question"><p><span class="num">${num}.</span> ${q}</p><div class="scale">`;
+  for (let v = 1; v <= 5; v++) {
+    html += `<label><input type="radio" name="q${num}" value="${v}"><span>${v}</span></label>`;
+  }
+  html += `</div><div class="extremes"><span>Discordo totalmente</span><span>Concordo totalmente</span></div></div>`;
+  container.innerHTML += html;
+});
+
+document.getElementById('susForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const respostas = [];
+  for (let i = 1; i <= 10; i++) {
+    const sel = document.querySelector(`input[name="q${i}"]:checked`);
+    if (!sel) {
+      document.getElementById('formError').style.display = 'block';
+      return;
+    }
+    respostas.push(parseInt(sel.value));
+  }
+  document.getElementById('formError').style.display = 'none';
+
+  let soma = 0;
+  for (let i = 0; i < 10; i++) {
+    if (i % 2 === 0) {
+      soma += respostas[i] - 1;
+    } else {
+      soma += 5 - respostas[i];
+    }
+  }
+  const score = soma * 2.5;
+
+  let classificacao, cor;
+  if (score >= 80.3) { classificacao = 'Excelente (A)'; cor = '#28a745'; }
+  else if (score >= 68) { classificacao = 'Bom (B/C)'; cor = '#ffc107'; }
+  else if (score >= 51) { classificacao = 'Mediano (D)'; cor = '#fd7e14'; }
+  else { classificacao = 'Insatisfatório (F)'; cor = '#dc3545'; }
+
+  const resultDiv = document.getElementById('result');
+  resultDiv.style.display = 'block';
+  document.getElementById('scoreValue').textContent = score.toFixed(1);
+  document.getElementById('scoreValue').style.color = cor;
+  document.getElementById('scoreLabel').textContent = classificacao;
+  document.getElementById('scoreDetail').textContent =
+    `Pontuação SUS: ${score.toFixed(1)} / 100. ` +
+    `Média da indústria: 68. Acima de 80.3 = top 10% (percentil A).`;
+
+  resultDiv.scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+</body>
+</html>

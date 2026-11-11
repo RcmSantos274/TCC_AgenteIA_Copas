@@ -1,0 +1,13 @@
+pandas
+streamlit
+plotly
+statsbombpy
+psycopg2-binary
+python-dotenv
+crewai
+sqlglot
+pytest
+scikit-learn
+mplsoccer
+matplotlib
+scipy

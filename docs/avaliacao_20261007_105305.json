@@ -1,0 +1,763 @@
+{
+  "timestamp": "20261007_105305",
+  "repeticoes": 3,
+  "n_perguntas": 25,
+  "total_execucoes": 75,
+  "acertos": 65,
+  "taxa_acerto": 86.7,
+  "tempo_medio_s": 4.3,
+  "tempo_min_s": 3.1,
+  "tempo_max_s": 8.8,
+  "resultados": [
+    {
+      "id": "gols_selecao_simples",
+      "categoria": "simples",
+      "tentativa": 1,
+      "esperado": "8",
+      "resposta": "Na Copa do Mundo de 2022, o Brasil fez um total de 8 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 8.8
+    },
+    {
+      "id": "gols_selecao_simples",
+      "categoria": "simples",
+      "tentativa": 2,
+      "esperado": "8",
+      "resposta": "Na Copa do Mundo de 2022, o Brasil fez um total de 8 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 5.1
+    },
+    {
+      "id": "gols_selecao_simples",
+      "categoria": "simples",
+      "tentativa": 3,
+      "esperado": "8",
+      "resposta": "Na Copa do Mundo de 2022, o Brasil fez um total de 8 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 5.0
+    },
+    {
+      "id": "gols_selecao_bug_conhecido",
+      "categoria": "simples",
+      "tentativa": 1,
+      "esperado": "15",
+      "resposta": "Na Copa do Mundo de 2022, a Argentina fez um total de 15 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.6
+    },
+    {
+      "id": "gols_selecao_bug_conhecido",
+      "categoria": "simples",
+      "tentativa": 2,
+      "esperado": "15",
+      "resposta": "Na Copa do Mundo de 2022, a Argentina fez um total de 15 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 5.2
+    },
+    {
+      "id": "gols_selecao_bug_conhecido",
+      "categoria": "simples",
+      "tentativa": 3,
+      "esperado": "15",
+      "resposta": "Na Copa do Mundo de 2022, a Argentina fez um total de 15 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.6
+    },
+    {
+      "id": "partidas_selecao",
+      "categoria": "simples",
+      "tentativa": 1,
+      "esperado": "7",
+      "resposta": "A França jogou um total de 7 partidas na Copa do Mundo de 2018.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.5
+    },
+    {
+      "id": "partidas_selecao",
+      "categoria": "simples",
+      "tentativa": 2,
+      "esperado": "7",
+      "resposta": "A França jogou um total de 7 partidas na Copa do Mundo de 2018.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.8
+    },
+    {
+      "id": "partidas_selecao",
+      "categoria": "simples",
+      "tentativa": 3,
+      "esperado": "7",
+      "resposta": "A França jogou um total de 7 partidas na Copa do Mundo de 2018.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.9
+    },
+    {
+      "id": "total_partidas_2018",
+      "categoria": "simples",
+      "tentativa": 1,
+      "esperado": "64",
+      "resposta": "Na Copa do Mundo de 2018, foram disputadas um total de 64 partidas.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.5
+    },
+    {
+      "id": "total_partidas_2018",
+      "categoria": "simples",
+      "tentativa": 2,
+      "esperado": "64",
+      "resposta": "Na Copa do Mundo de 2018, foram disputadas um total de 64 partidas.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.4
+    },
+    {
+      "id": "total_partidas_2018",
+      "categoria": "simples",
+      "tentativa": 3,
+      "esperado": "64",
+      "resposta": "Na Copa do Mundo de 2018, foram disputadas um total de 64 partidas.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.3
+    },
+    {
+      "id": "gols_fase_grupos_2022",
+      "categoria": "simples",
+      "tentativa": 1,
+      "esperado": "120",
+      "resposta": "Na fase de grupos da Copa do Mundo de 2022, foram marcados um total de 120 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.9
+    },
+    {
+      "id": "gols_fase_grupos_2022",
+      "categoria": "simples",
+      "tentativa": 2,
+      "esperado": "120",
+      "resposta": "Na fase de grupos da Copa do Mundo de 2022, foram marcados um total de 120 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.7
+    },
+    {
+      "id": "gols_fase_grupos_2022",
+      "categoria": "simples",
+      "tentativa": 3,
+      "esperado": "120",
+      "resposta": "Na fase de grupos da Copa do Mundo de 2022, foram marcados um total de 120 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.4
+    },
+    {
+      "id": "artilheiro_edicao",
+      "categoria": "join_multiplo",
+      "tentativa": 1,
+      "esperado": "Kylian Mbappé Lottin - 8",
+      "resposta": "O artilheiro da Copa do Mundo de 2022 foi Kylian Mbappé Lottin, que marcou 8 gols pela seleção da França.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.7
+    },
+    {
+      "id": "artilheiro_edicao",
+      "categoria": "join_multiplo",
+      "tentativa": 2,
+      "esperado": "Kylian Mbappé Lottin - 8",
+      "resposta": "O artilheiro da Copa do Mundo de 2022 foi Kylian Mbappé Lottin, que marcou 8 gols pela seleção da França.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.7
+    },
+    {
+      "id": "artilheiro_edicao",
+      "categoria": "join_multiplo",
+      "tentativa": 3,
+      "esperado": "Kylian Mbappé Lottin - 8",
+      "resposta": "O artilheiro da Copa do Mundo de 2022 foi Kylian Mbappé Lottin, que marcou 8 gols pela seleção da França.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.0
+    },
+    {
+      "id": "chutes_a_gol_jogador",
+      "categoria": "join_multiplo",
+      "tentativa": 1,
+      "esperado": "13",
+      "resposta": "Na Copa do Mundo de 2022, Kylian Mbappé teve um total de 13 chutes a gol.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.1
+    },
+    {
+      "id": "chutes_a_gol_jogador",
+      "categoria": "join_multiplo",
+      "tentativa": 2,
+      "esperado": "13",
+      "resposta": "Na Copa do Mundo de 2022, Kylian Mbappé teve um total de 13 chutes a gol.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.9
+    },
+    {
+      "id": "chutes_a_gol_jogador",
+      "categoria": "join_multiplo",
+      "tentativa": 3,
+      "esperado": "13",
+      "resposta": "Na Copa do Mundo de 2022, Kylian Mbappé teve um total de 13 chutes a gol.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.7
+    },
+    {
+      "id": "gols_kane_2018",
+      "categoria": "join_multiplo",
+      "tentativa": 1,
+      "esperado": "6",
+      "resposta": "Na Copa do Mundo de 2018, Harry Kane marcou um total de 6 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.0
+    },
+    {
+      "id": "gols_kane_2018",
+      "categoria": "join_multiplo",
+      "tentativa": 2,
+      "esperado": "6",
+      "resposta": "Na Copa do Mundo de 2018, Harry Kane marcou um total de 6 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.6
+    },
+    {
+      "id": "gols_kane_2018",
+      "categoria": "join_multiplo",
+      "tentativa": 3,
+      "esperado": "6",
+      "resposta": "Na Copa do Mundo de 2018, Harry Kane marcou um total de 6 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.3
+    },
+    {
+      "id": "faltas_neymar_2018",
+      "categoria": "join_multiplo",
+      "tentativa": 1,
+      "esperado": "27",
+      "resposta": "Na Copa do Mundo de 2018, Neymar sofreu um total de 27 faltas.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.6
+    },
+    {
+      "id": "faltas_neymar_2018",
+      "categoria": "join_multiplo",
+      "tentativa": 2,
+      "esperado": "27",
+      "resposta": "Na Copa do Mundo de 2018, Neymar sofreu um total de 27 faltas.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.3
+    },
+    {
+      "id": "faltas_neymar_2018",
+      "categoria": "join_multiplo",
+      "tentativa": 3,
+      "esperado": "27",
+      "resposta": "Na Copa do Mundo de 2018, Neymar sofreu um total de 27 faltas.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.3
+    },
+    {
+      "id": "comparacao_edicoes",
+      "categoria": "comparativa",
+      "tentativa": 1,
+      "esperado": "2022",
+      "resposta": "Na Copa do Mundo de 2018, a Argentina fez 6 gols, enquanto na Copa de 2022, a seleção argentina marcou 15 gols. Portanto, a Argentina fez mais gols na Copa de 2022.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.7
+    },
+    {
+      "id": "comparacao_edicoes",
+      "categoria": "comparativa",
+      "tentativa": 2,
+      "esperado": "2022",
+      "resposta": "Na Copa do Mundo de 2018, a Argentina fez 6 gols, enquanto na Copa de 2022, a seleção argentina marcou 15 gols. Portanto, a Argentina fez mais gols na Copa de 2022.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 5.2
+    },
+    {
+      "id": "comparacao_edicoes",
+      "categoria": "comparativa",
+      "tentativa": 3,
+      "esperado": "2022",
+      "resposta": "Na Copa do Mundo de 2018, a Argentina fez 6 gols, enquanto na Copa de 2022, a seleção argentina marcou 15 gols. Portanto, a Argentina fez mais gols na Copa de 2022.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.8
+    },
+    {
+      "id": "gols_por_posicao_duas_edicoes",
+      "categoria": "comparativa",
+      "tentativa": 1,
+      "esperado": "103",
+      "resposta": "Somando as Copas do Mundo de 2018 e 2022, os jogadores da posição Center Forward marcaram um total de 103 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.9
+    },
+    {
+      "id": "gols_por_posicao_duas_edicoes",
+      "categoria": "comparativa",
+      "tentativa": 2,
+      "esperado": "103",
+      "resposta": "Somando as Copas do Mundo de 2018 e 2022, os jogadores da posição Center Forward marcaram um total de 103 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.9
+    },
+    {
+      "id": "gols_por_posicao_duas_edicoes",
+      "categoria": "comparativa",
+      "tentativa": 3,
+      "esperado": "103",
+      "resposta": "Somando as duas Copas do Mundo, os jogadores da posição Center Forward marcaram um total de 103 gols.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.7
+    },
+    {
+      "id": "selecao_mais_gols_2018",
+      "categoria": "comparativa",
+      "tentativa": 1,
+      "esperado": "Belgium",
+      "resposta": "Na Copa do Mundo de 2018, a seleção que marcou mais gols foi a Bélgica, com um total de 16 gols.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 7.0
+    },
+    {
+      "id": "selecao_mais_gols_2018",
+      "categoria": "comparativa",
+      "tentativa": 2,
+      "esperado": "Belgium",
+      "resposta": "Na Copa do Mundo de 2018, a seleção que marcou mais gols foi a Bélgica, com um total de 16 gols.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 4.3
+    },
+    {
+      "id": "selecao_mais_gols_2018",
+      "categoria": "comparativa",
+      "tentativa": 3,
+      "esperado": "Belgium",
+      "resposta": "Na Copa do Mundo de 2018, a seleção que marcou mais gols foi a Bélgica, com um total de 16 gols.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 4.2
+    },
+    {
+      "id": "ranking_passes_2022",
+      "categoria": "comparativa",
+      "tentativa": 1,
+      "esperado": "Rodrigo Hernández Cascante - 644",
+      "resposta": "Na Copa do Mundo de 2022, o jogador que deu mais passes certos foi Rodrigo Hernández Cascante, da seleção da Espanha, com um total de 644 passes certos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.1
+    },
+    {
+      "id": "ranking_passes_2022",
+      "categoria": "comparativa",
+      "tentativa": 2,
+      "esperado": "Rodrigo Hernández Cascante - 644",
+      "resposta": "Na Copa do Mundo de 2022, o jogador que deu mais passes certos foi Rodrigo Hernández Cascante, da seleção da Espanha, com um total de 644 passes certos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 6.7
+    },
+    {
+      "id": "ranking_passes_2022",
+      "categoria": "comparativa",
+      "tentativa": 3,
+      "esperado": "Rodrigo Hernández Cascante - 644",
+      "resposta": "Na Copa do Mundo de 2022, o jogador que deu mais passes certos foi Rodrigo Hernández Cascante, da seleção da Espanha, com um total de 644 passes certos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.6
+    },
+    {
+      "id": "grupo_selecao_edicao",
+      "categoria": "ambiguidade",
+      "tentativa": 1,
+      "esperado": "E",
+      "resposta": "Na Copa do Mundo de 2022, a Alemanha jogou no Grupo E.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 5.4
+    },
+    {
+      "id": "grupo_selecao_edicao",
+      "categoria": "ambiguidade",
+      "tentativa": 2,
+      "esperado": "E",
+      "resposta": "Na Copa do Mundo de 2022, a Alemanha jogou no grupo E.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.4
+    },
+    {
+      "id": "grupo_selecao_edicao",
+      "categoria": "ambiguidade",
+      "tentativa": 3,
+      "esperado": "E",
+      "resposta": "Na Copa do Mundo de 2022, a Alemanha jogou no grupo G.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.4
+    },
+    {
+      "id": "contagem_goleiros",
+      "categoria": "ambiguidade",
+      "tentativa": 1,
+      "esperado": "67",
+      "resposta": "Nas Copas do Mundo de 2018 e 2022, um total de 67 jogadores diferentes atuaram como goleiros.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.0
+    },
+    {
+      "id": "contagem_goleiros",
+      "categoria": "ambiguidade",
+      "tentativa": 2,
+      "esperado": "67",
+      "resposta": "Nas Copas do Mundo de 2018 e 2022, um total de 67 jogadores diferentes atuaram como goleiros.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.9
+    },
+    {
+      "id": "contagem_goleiros",
+      "categoria": "ambiguidade",
+      "tentativa": 3,
+      "esperado": "67",
+      "resposta": "Nas Copas do Mundo de 2018 e 2022, um total de 67 jogadores diferentes atuaram como goleiro (Goalkeeper).",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.5
+    },
+    {
+      "id": "penaltis_final_2022",
+      "categoria": "ambiguidade",
+      "tentativa": 1,
+      "esperado": "3",
+      "resposta": "Na final da Copa do Mundo de 2022, Lionel Messi marcou um total de 3 gols durante o jogo, incluindo 1 gol na disputa de pênaltis. Portanto, somando os gols em tempo normal e os pênaltis, Messi marcou 4 gols na partida.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 6.8
+    },
+    {
+      "id": "penaltis_final_2022",
+      "categoria": "ambiguidade",
+      "tentativa": 2,
+      "esperado": "3",
+      "resposta": "Na final da Copa do Mundo de 2022, Lionel Messi marcou um total de 3 gols, incluindo 1 gol na disputa de pênaltis.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 6.2
+    },
+    {
+      "id": "penaltis_final_2022",
+      "categoria": "ambiguidade",
+      "tentativa": 3,
+      "esperado": "3",
+      "resposta": "Na final da Copa do Mundo de 2022, Lionel Messi marcou um total de 3 gols, incluindo 1 gol na disputa de pênaltis.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 6.7
+    },
+    {
+      "id": "vencedor_final_2018",
+      "categoria": "ambiguidade",
+      "tentativa": 1,
+      "esperado": "France",
+      "resposta": "Na final da Copa do Mundo de 2018, a seleção da França venceu a Croácia com o placar de 4 a 2.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 5.2
+    },
+    {
+      "id": "vencedor_final_2018",
+      "categoria": "ambiguidade",
+      "tentativa": 2,
+      "esperado": "France",
+      "resposta": "Na final da Copa do Mundo de 2018, a seleção da França venceu a Croácia com um placar de 4 a 2.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 4.1
+    },
+    {
+      "id": "vencedor_final_2018",
+      "categoria": "ambiguidade",
+      "tentativa": 3,
+      "esperado": "France",
+      "resposta": "Na final da Copa do Mundo de 2018, a seleção da França venceu a Croácia com o placar de 4 a 2.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 3.7
+    },
+    {
+      "id": "jogos_sem_gol_2022",
+      "categoria": "ambiguidade",
+      "tentativa": 1,
+      "esperado": "7",
+      "resposta": "Na Copa do Mundo de 2022, houve 7 jogos que terminaram com o placar de 0 a 0.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.5
+    },
+    {
+      "id": "jogos_sem_gol_2022",
+      "categoria": "ambiguidade",
+      "tentativa": 2,
+      "esperado": "7",
+      "resposta": "Na Copa do Mundo de 2022, houve 7 jogos que terminaram com o placar de 0 a 0.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.7
+    },
+    {
+      "id": "jogos_sem_gol_2022",
+      "categoria": "ambiguidade",
+      "tentativa": 3,
+      "esperado": "7",
+      "resposta": "Na Copa do Mundo de 2022, houve 7 jogos que terminaram com o placar de 0 a 0.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.7
+    },
+    {
+      "id": "dribles_hazard_2018",
+      "categoria": "defensiva",
+      "tentativa": 1,
+      "esperado": "28",
+      "resposta": "Na Copa do Mundo de 2018, Eden Hazard completou 28 dribles certos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.0
+    },
+    {
+      "id": "dribles_hazard_2018",
+      "categoria": "defensiva",
+      "tentativa": 2,
+      "esperado": "28",
+      "resposta": "Na Copa do Mundo de 2018, Eden Hazard completou 28 dribles certos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.0
+    },
+    {
+      "id": "dribles_hazard_2018",
+      "categoria": "defensiva",
+      "tentativa": 3,
+      "esperado": "28",
+      "resposta": "Na Copa do Mundo de 2018, Eden Hazard completou 28 dribles certos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.9
+    },
+    {
+      "id": "impedimentos_total_2022",
+      "categoria": "defensiva",
+      "tentativa": 1,
+      "esperado": "26",
+      "resposta": "Na Copa do Mundo de 2022, foram marcados um total de 26 impedimentos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.1
+    },
+    {
+      "id": "impedimentos_total_2022",
+      "categoria": "defensiva",
+      "tentativa": 2,
+      "esperado": "26",
+      "resposta": "Na Copa do Mundo de 2022, foram marcados um total de 26 impedimentos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.1
+    },
+    {
+      "id": "impedimentos_total_2022",
+      "categoria": "defensiva",
+      "tentativa": 3,
+      "esperado": "26",
+      "resposta": "Na Copa do Mundo de 2022, foram marcados um total de 26 impedimentos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.7
+    },
+    {
+      "id": "perfil_tatico_jogador",
+      "categoria": "analitica",
+      "tentativa": 1,
+      "esperado": "Defensor",
+      "resposta": "O perfil tático de Virgil van Dijk, considerando suas atuações nas Copas do Mundo de 2018 e 2022, é classificado como \"Defensor\". Ele participou de 5 partidas durante essas edições.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.5
+    },
+    {
+      "id": "perfil_tatico_jogador",
+      "categoria": "analitica",
+      "tentativa": 2,
+      "esperado": "Defensor",
+      "resposta": "O perfil tático de Virgil van Dijk, considerando suas atuações nas Copas do Mundo de 2018 e 2022, é classificado como \"Defensor\". Ele participou de 5 partidas durante essas edições.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.7
+    },
+    {
+      "id": "perfil_tatico_jogador",
+      "categoria": "analitica",
+      "tentativa": 3,
+      "esperado": "Defensor",
+      "resposta": "O perfil tático de Virgil van Dijk, considerando suas atuações nas Copas do Mundo de 2018 e 2022, é classificado como \"Defensor\". Ele participou de 5 partidas durante essas edições.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.0
+    },
+    {
+      "id": "perfil_tatico_mbappe",
+      "categoria": "analitica",
+      "tentativa": 1,
+      "esperado": "Finalizador",
+      "resposta": "O perfil tático de Kylian Mbappé, com base nas edições da Copa do Mundo, é classificado como \"Finalizador\". Ele participou de 14 partidas.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.4
+    },
+    {
+      "id": "perfil_tatico_mbappe",
+      "categoria": "analitica",
+      "tentativa": 2,
+      "esperado": "Finalizador",
+      "resposta": "O perfil tático de Kylian Mbappé, com base nas edições da Copa do Mundo, é classificado como \"Finalizador\". Ele participou de 14 partidas.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.4
+    },
+    {
+      "id": "perfil_tatico_mbappe",
+      "categoria": "analitica",
+      "tentativa": 3,
+      "esperado": "Finalizador",
+      "resposta": "O perfil tático de Kylian Mbappé, com base nas edições da Copa do Mundo, é classificado como \"Finalizador\". Ele participou de 14 partidas.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.8
+    },
+    {
+      "id": "heatmap_jogador",
+      "categoria": "analitica",
+      "tentativa": 1,
+      "esperado": "34",
+      "resposta": "O mapa de calor gerado mostra as finalizações de Lionel Messi na Copa do Mundo de 2022, com um total de 34 eventos do tipo \"Shot\". A imagem anexa ilustra as áreas do campo onde ele mais atuou durante os jogos.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 6.8
+    },
+    {
+      "id": "heatmap_jogador",
+      "categoria": "analitica",
+      "tentativa": 2,
+      "esperado": "34",
+      "resposta": "O mapa de calor gerado mostra as finalizações de Lionel Messi na Copa do Mundo de 2022, com um total de 34 eventos do tipo \"Shot\". A imagem anexa ilustra as áreas do campo onde Messi mais atuou ao tentar finalizar.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 5.2
+    },
+    {
+      "id": "heatmap_jogador",
+      "categoria": "analitica",
+      "tentativa": 3,
+      "esperado": "34",
+      "resposta": "O mapa de calor gerado mostra a distribuição de 1009 eventos do jogador Lionel Messi na Copa do Mundo de 2022. A imagem anexa ilustra onde Messi atuou em campo durante os jogos dessa edição do torneio.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 8.1
+    },
+    {
+      "id": "xg_neymar_2022",
+      "categoria": "xg",
+      "tentativa": 1,
+      "esperado": "2.13",
+      "resposta": "O xG total do Neymar na Copa do Mundo de 2022 foi de 2.1292.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 6.2
+    },
+    {
+      "id": "xg_neymar_2022",
+      "categoria": "xg",
+      "tentativa": 2,
+      "esperado": "2.13",
+      "resposta": "O xG total do Neymar na Copa do Mundo de 2022 foi de 2.1292.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 3.4
+    },
+    {
+      "id": "xg_neymar_2022",
+      "categoria": "xg",
+      "tentativa": 3,
+      "esperado": "2.13",
+      "resposta": "O xG total do Neymar na Copa do Mundo de 2022 foi de 2.1292.",
+      "ok": false,
+      "erro_execucao": null,
+      "duracao_s": 3.9
+    },
+    {
+      "id": "assistencias_neymar_2018",
+      "categoria": "xg",
+      "tentativa": 1,
+      "esperado": "1",
+      "resposta": "Na Copa do Mundo de 2018, Neymar deu 1 assistência.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 4.0
+    },
+    {
+      "id": "assistencias_neymar_2018",
+      "categoria": "xg",
+      "tentativa": 2,
+      "esperado": "1",
+      "resposta": "Na Copa do Mundo de 2018, Neymar deu 1 assistência.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.5
+    },
+    {
+      "id": "assistencias_neymar_2018",
+      "categoria": "xg",
+      "tentativa": 3,
+      "esperado": "1",
+      "resposta": "Na Copa do Mundo de 2018, Neymar deu um total de 1 assistência.",
+      "ok": true,
+      "erro_execucao": null,
+      "duracao_s": 3.8
+    }
+  ]
+}

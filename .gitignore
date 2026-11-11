@@ -1,0 +1,11 @@
+.env
+.env.local.bak
+.venv/
+__pycache__/
+*.pyc
+copas_mundo.db
+*.log
+partidas_copas.csv
+resultado_jogadores.txt
+heatmap.png
+.pytest_cache/
